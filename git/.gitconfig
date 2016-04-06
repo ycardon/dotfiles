@@ -1,0 +1,7 @@
+[url "https://"]
+	insteadOf = git://
+[user]
+	email = yann.cardon@orange.com
+	name = Yann Cardon
+[push]
+	default = simple
