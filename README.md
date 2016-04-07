@@ -1,5 +1,12 @@
-my dotfiles using [stow](https://www.gnu.org/software/stow/)
+Yann Cardon's dotfiles
 
+managed with [GNU Stow](https://www.gnu.org/software/stow)
+
+- [fish](https://fishshell.com): proxy related functions, [fisherman](http://fisherman.sh) plug-ins manager
+- git
+- nano
+
+usage:
 ```
 cd ~
 git clone <this repo>
