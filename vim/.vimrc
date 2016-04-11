@@ -25,7 +25,7 @@ let g:airline_powerline_fonts = 1
 set laststatus=2
 
 " themes
-set guifont="Ubuntu Mono derivative Powerline 12" 
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 set background=dark
 colorscheme molokai
 
