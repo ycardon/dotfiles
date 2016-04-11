@@ -18,7 +18,7 @@ filetype plugin indent on
 " terminal type and themes
 set term=xterm-256color
 set encoding=utf-8
-set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
 set background=dark
 colorscheme molokai
 
