@@ -12,6 +12,10 @@ call vundle#begin()
 	Plugin 'vim-airline/vim-airline-themes'
 	Plugin 'flazz/vim-colorschemes'
 	Plugin 'airblade/vim-gitgutter'
+  Plugin 'scrooloose/nerdtree'
+  Plugin 'tpope/vim-fugitive'
+  Plugin 'ctrlpvim/ctrlp.vim'
+  Plugin 'dag/vim-fish'
 call vundle#end()
 filetype plugin indent on
 
