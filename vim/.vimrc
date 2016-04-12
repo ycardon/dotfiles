@@ -24,11 +24,11 @@ set term=xterm-256color
 set encoding=utf-8
 set mouse=a
 set background=dark
+"colorscheme molokai
 
 if has("osx")
 else
 	set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
-	colorscheme molokai
 endif
 
 " statusline
