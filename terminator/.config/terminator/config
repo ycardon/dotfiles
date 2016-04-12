@@ -1,0 +1,33 @@
+[global_config]
+  inactive_color_offset = 0.67
+  scroll_tabbar = True
+  title_font = Standard Symbols L 7
+  title_hide_sizetext = True
+  title_inactive_bg_color = "#747474"
+  title_inactive_fg_color = "#ffffff"
+  title_receive_bg_color = "#5294e2"
+  title_transmit_bg_color = "#e7e8eb"
+  title_transmit_fg_color = "#000000"
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    background_darkness = 0.94
+    background_image = None
+    background_type = transparent
+    copy_on_selection = True
+    font = Ubuntu Mono derivative Powerline 12
+    foreground_color = "#839496"
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    scrollbar_position = hidden
+    use_system_font = False
