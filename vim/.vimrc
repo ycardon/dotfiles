@@ -23,9 +23,13 @@ filetype plugin indent on
 set term=xterm-256color
 set encoding=utf-8
 set mouse=a
-set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
 set background=dark
-colorscheme molokai
+
+if has("osx")
+else
+	set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+	colorscheme molokai
+endif
 
 " statusline
 let g:airline_powerline_fonts = 1
