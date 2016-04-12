@@ -53,8 +53,8 @@ set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
 " Auto indent pasted text
-"nnoremap p p=`]<C-o>
-"nnoremap P P=`]<C-o>
+nnoremap p p=`]<C-o>
+nnoremap P P=`]<C-o>
 
 " improved search
 set incsearch
@@ -79,7 +79,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>
 
-" vim-unimpaired
+" vim-unimpaired remapped to < and >
 nmap < [
 nmap > ]
 omap < [
