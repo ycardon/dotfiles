@@ -1,3 +1,3 @@
-function code --description 'alias for vim'
+function vi --description 'alias for vim'
 	vim $argv
 end

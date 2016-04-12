@@ -19,28 +19,29 @@
       maximised = False
       order = 0
       parent = ""
-      position = 45:61
-      size = 1202, 802
+      position = 252:118
+      size = 1202, 770
       title = ~
       type = Window
     [[[terminal1]]]
       order = 0
       parent = child0
-      profile = Afterglow
+      profile = default
       type = Terminal
       uuid = a77d42df-1a26-4088-9e9f-e166ee76b20c
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#002b36"
+    background_color = "#212121"
     background_darkness = 0.94
     background_image = None
     background_type = transparent
     copy_on_selection = True
-    cursor_color = "#ffffff"
+    cursor_blink = False
+    cursor_color = "#a33333"
     font = Ubuntu Mono derivative Powerline 12
-    foreground_color = "#839496"
-    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    foreground_color = "#d0d0d0"
+    palette = "#151515:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#d0d0d0:#505050:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#f5f5f5"
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
@@ -55,6 +56,33 @@
     font = Ubuntu Mono derivative Powerline 12
     foreground_color = "#d0d0d0"
     palette = "#151515:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#d0d0d0:#505050:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#f5f5f5"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[Twilight]]
+    background_color = "#212121"
+    background_darkness = 0.94
+    background_image = None
+    background_type = transparent
+    copy_on_selection = True
+    cursor_blink = False
+    cursor_color = "#a33333"
+    font = Ubuntu Mono derivative Powerline 12
+    foreground_color = "#d0d0d0"
+    palette = "#141414:#c06d44:#afb97a:#c2a86c:#44474a:#b4be7c:#778385:#ffffd4:#262626:#de7c4c:#ccd88c:#e2c47e:#5a5e62:#d0dc8e:#8a989b:#ffffd4"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[old-default]]
+    background_color = "#002b36"
+    background_darkness = 0.94
+    background_image = None
+    background_type = transparent
+    copy_on_selection = True
+    cursor_color = "#ffffff"
+    font = Ubuntu Mono derivative Powerline 12
+    foreground_color = "#839496"
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False

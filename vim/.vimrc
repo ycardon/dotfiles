@@ -24,11 +24,9 @@ set term=xterm-256color
 set encoding=utf-8
 set mouse=a
 set background=dark
-"colorscheme molokai
+colorscheme twilight
 
 if has("osx")
-else
-	set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
 endif
 
 " statusline
@@ -49,18 +47,25 @@ set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
 " Auto indent pasted text
-nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
+"nnoremap p p=`]<C-o>
+"nnoremap P P=`]<C-o>
 
 " coloration syntaxique
 syntax on
 
 " Display tabs and trailing spaces visually
-set list listchars=tab:\ \ ,trail:·
+set list listchars=tab:·\ ,trail:·
 
 " http://items.sjbach.com/319/configuring-vim-right
-set hidden		
+set hidden
 
 " tab completion
 set wildmenu
 set wildmode=list:longest
+
+" nerd tree : autoload if no args passed, close when last open buffer
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-n> :NERDTreeToggle<CR>
+
