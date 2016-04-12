@@ -12,10 +12,10 @@ call vundle#begin()
 	Plugin 'vim-airline/vim-airline-themes'
 	Plugin 'flazz/vim-colorschemes'
 	Plugin 'airblade/vim-gitgutter'
-  Plugin 'scrooloose/nerdtree'
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'ctrlpvim/ctrlp.vim'
-  Plugin 'dag/vim-fish'
+	Plugin 'scrooloose/nerdtree'
+	Plugin 'tpope/vim-fugitive'
+	Plugin 'ctrlpvim/ctrlp.vim'
+	Plugin 'dag/vim-fish'
 call vundle#end()
 filetype plugin indent on
 
@@ -29,6 +29,7 @@ colorscheme molokai
 
 " statusline
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'bubblegum'
 set laststatus=2
 set nonumber
 set visualbell
@@ -40,7 +41,6 @@ set smarttab
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
-set expandtab
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
