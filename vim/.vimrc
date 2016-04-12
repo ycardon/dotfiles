@@ -12,9 +12,10 @@ call vundle#begin()
 	Plugin 'vim-airline/vim-airline-themes'
 	Plugin 'flazz/vim-colorschemes'
 	Plugin 'airblade/vim-gitgutter'
-	Plugin 'scrooloose/nerdtree'
 	Plugin 'tpope/vim-fugitive'
+	Plugin 'scrooloose/nerdtree'
 	Plugin 'ctrlpvim/ctrlp.vim'
+	Plugin 'tommcdo/vim-exchange'
 	Plugin 'dag/vim-fish'
 call vundle#end()
 filetype plugin indent on
@@ -49,6 +50,10 @@ set linebreak    "Wrap lines at convenient points
 " Auto indent pasted text
 "nnoremap p p=`]<C-o>
 "nnoremap P P=`]<C-o>
+
+" improved search
+set incsearch
+set hlsearch
 
 " coloration syntaxique
 syntax on
