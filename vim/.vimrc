@@ -17,6 +17,8 @@ call vundle#begin()
 	Plugin 'ctrlpvim/ctrlp.vim'
 	Plugin 'tommcdo/vim-exchange'
 	Plugin 'dag/vim-fish'
+	Plugin 'pangloss/vim-javascript'
+	Plugin 'townk/vim-autoclose'
 call vundle#end()
 filetype plugin indent on
 
