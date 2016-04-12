@@ -8,20 +8,33 @@ let mapleader=","
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+	" plugin manager
 	Plugin 'VundleVim/Vundle.vim'
+
+	" visual
 	Plugin 'vim-airline/vim-airline'
 	Plugin 'vim-airline/vim-airline-themes'
 	Plugin 'flazz/vim-colorschemes'
+
+	" git
 	Plugin 'airblade/vim-gitgutter'
 	Plugin 'tpope/vim-fugitive'
+
+	" tools
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'ctrlpvim/ctrlp.vim'
-	Plugin 'tommcdo/vim-exchange'
+
+	" syntax
 	Plugin 'dag/vim-fish'
 	Plugin 'pangloss/vim-javascript'
-	Plugin 'townk/vim-autoclose'
-	Plugin 'tpope/vim-unimpaired'
-	Plugin 'tpope/vim-repeat'
+
+	" editing
+	Plugin 'tpope/vim-repeat'       " repeat works with plugins
+	Plugin 'tpope/vim-unimpaired'   " exchange lines & other stuff
+	Plugin 'tommcdo/vim-exchange'   " swap text regions
+	Plugin 'townk/vim-autoclose'    " matching parenthesis & co
+
 call vundle#end()
 filetype plugin indent on
 
@@ -30,9 +43,11 @@ set term=xterm-256color
 set encoding=utf-8
 set mouse=a
 set background=dark
+set guioptions=aegm
 colorscheme twilight
 
 if has("osx")
+	set guifont=Ubuntu\ Mono\ derivative\ Powerline\ Nerd\ Font\ Complete:h16
 endif
 
 " statusline
@@ -46,11 +61,11 @@ set visualbell
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
-set nowrap       "Don't wrap lines
-set linebreak    "Wrap lines at convenient points
+set tabstop=4			" tabs print as 4 spaces
+set shiftwidth=4
+set softtabstop=4
+set nowrap				" don't wrap lines
+set linebreak			" wrap lines at convenient points
 
 " Auto indent pasted text
 nnoremap p p=`]<C-o>
@@ -64,7 +79,8 @@ set hlsearch
 syntax on
 
 " Display tabs and trailing spaces visually
-set list listchars=tab:·\ ,trail:·
+set list
+set listchars=tab:·\ ,trail:·
 
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
