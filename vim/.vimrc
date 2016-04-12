@@ -1,6 +1,7 @@
 
 " viMproved
 set nocompatible
+set shell=/bin/bash
 let mapleader=","
 
 " Vundle plugin manager (run :PluginInstall after modification)
@@ -19,6 +20,8 @@ call vundle#begin()
 	Plugin 'dag/vim-fish'
 	Plugin 'pangloss/vim-javascript'
 	Plugin 'townk/vim-autoclose'
+	Plugin 'tpope/vim-unimpaired'
+	Plugin 'tpope/vim-repeat'
 call vundle#end()
 filetype plugin indent on
 
@@ -76,3 +79,10 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>
 
+" vim-unimpaired
+nmap < [
+nmap > ]
+omap < [
+omap > ]
+xmap < [
+xmap > ]
