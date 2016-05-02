@@ -24,6 +24,7 @@ call vundle#begin()
 	" tools
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'ctrlpvim/ctrlp.vim'
+	Plugin 'junegunn/fzf'
 
 	" syntax
 	Plugin 'dag/vim-fish'
@@ -70,6 +71,9 @@ set linebreak			" wrap lines at convenient points
 " Auto indent pasted text
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
+
+" use system clipboard
+set clipboard=unnamedplus
 
 " improved search
 set incsearch
