@@ -7,5 +7,7 @@ set -x TERM xterm-256color
 set -g theme_date_format "+%a %H:%M"
 set -g theme_nerd_fonts yes
 
-# nvm setup
-nvm use node
+# loading snippets (since fish <= v2.3)
+for file in ~/.config/fish/conf.d/*.fish
+	source $file
+end
