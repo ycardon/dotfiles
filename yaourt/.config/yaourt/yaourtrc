@@ -1,6 +1,12 @@
 
 # always search for new version of development (CVS/SVN/Git/Mercurial/other VCS) packages when upgrading (yaourt -Su).
-DEVEL=1
+#DEVEL=1
 
 # enable pager (use $PAGER variable)
 USEPAGER=1
+
+# force colored outputa
+USECOLOR=2
+
+# use git instead of ABS for --devel packages
+#USE_GIT=1
