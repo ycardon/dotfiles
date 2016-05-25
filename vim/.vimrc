@@ -25,6 +25,7 @@ call vundle#begin()
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'ctrlpvim/ctrlp.vim'
 	Plugin 'junegunn/fzf'
+	Plugin 'Shougo/unite.vim'
 
 	" syntax
 	Plugin 'dag/vim-fish'
@@ -46,6 +47,20 @@ set mouse=a
 set background=dark
 set guioptions=aegm
 colorscheme twilight
+
+set cursorline                  " highlight the line under the cursor
+set fillchars+=vert:│           " better looking for windows separator
+set ttyfast                     " better screen redraw
+set title                       " set the terminal title to the current file
+set showcmd                     " shows partial commands
+set hidden                      " hide the inactive buffers
+set ruler                       " sets a permanent rule
+set lazyredraw                  " only redraws if it is needed
+set autoread                    " update a open file edited outside of Vim
+set ttimeoutlen=0               " toggle between modes almost instantly
+set backspace=indent,eol,start  " defines the backspace key behavior
+"set virtualedit=all            " to edit where there is no actual character
+set more                        " to show pages using `more` in command outpouts
 
 if has("osx")
 	set guifont=Ubuntu\ Mono\ derivative\ Powerline\ Nerd\ Font\ Complete:h16
