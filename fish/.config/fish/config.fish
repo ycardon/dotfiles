@@ -12,7 +12,3 @@ set -x PATH $PATH $GOPATH/bin
 set -g theme_date_format "+%a %H:%M"
 set -g theme_nerd_fonts yes
 
-# loading snippets (since fish <= v2.3)
-for file in ~/.config/fish/conf.d/*.fish
-	source $file
-end
