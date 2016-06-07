@@ -9,8 +9,9 @@ function update
 	echo "=== RUBY ==="
 	gem update
 
-	echo "=== PYTHON ==="
-	pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs sudo pip install --upgrade
+	#### bad habbit, conflicts with pacman
+	# echo "=== PYTHON ==="
+	# pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs sudo pip install --upgrade
 
 	echo "=== FISH ==="
 	fish_update_completions
