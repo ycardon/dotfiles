@@ -64,6 +64,8 @@ set more                        " to show pages using `more` in command outpouts
 
 if has("osx")
 	set guifont=Ubuntu\ Mono\ derivative\ Powerline\ Nerd\ Font\ Complete:h16
+	set guioptions=aegm
+else
 endif
 
 " statusline
