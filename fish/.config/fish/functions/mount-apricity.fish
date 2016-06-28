@@ -1,6 +1,6 @@
 function mount-apricity
 	set -l vdi_file "/run/media/ycardon/MicroSSD/VirtualBox/Apricity OS/Apricity OS.vdi"
-	set -l vdi_mount /mnt/vdi-apricity
+	set -l vdi_mount /run/mnt/vdi-apricity
 	set -l final_mount /run/media/ycardon/ApricityVM
 
 	if test -d $final_mount
