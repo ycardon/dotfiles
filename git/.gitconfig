@@ -8,3 +8,7 @@
 [pull]
 	rebase = true
 
+[merge]
+	tool = meld
+[diff]
+	tool = meld
